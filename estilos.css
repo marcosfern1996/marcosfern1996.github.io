@@ -1,0 +1,158 @@
+
+body {
+ 
+  background-color: #292F36; /* Puedes cambiar el color aquí según tus preferencias */
+    
+    
+    color: #fff; /* Puedes cambiar el color del texto según tus preferencias */
+    margin: 0;
+    padding: 0;
+  
+    font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+nav a { list-style-type: none;
+      
+    color: #fff; /* Puedes cambiar el color de los enlaces según tus preferencias */
+    text-decoration: none;
+    margin: 15px; /* Puedes ajustar el espacio entre los enlaces según tus preferencias */
+}        
+
+
+.contenedor{
+   
+    width: 90%;
+    margin: 0 ;
+
+    display: grid;
+    grid-template-columns: 8% auto;
+}
+aside{
+    padding: 0 15px;
+    
+background: #3F37C9;
+}
+aside .contenedor-temario{
+padding-top: 20px;
+
+}
+
+aside .lista{
+    list-style: none;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+display: inline-block;
+    position: fixed;
+    justify-content: left;
+
+background: #3F37C9;
+}
+aside .lista li {
+    position: relative;
+    max-width: 50px;    
+}
+aside .lista li a{
+    display:block;
+    padding: 100px 0px;
+    color: black;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+aside .lista li.activo a,
+aside .lista li a:hover{
+    color: white;
+}
+aside .lista li::before {
+
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    background: coral;
+    border: 2px solid black;
+    position: absolute;
+    left: -19px;
+    bottom: 120px;
+    transform: rotate(45deg);
+
+}
+aside .lista li.activo::before{
+    background: red;
+    border: 2px solid black;
+}
+aside .lista li:hover::before {
+    border: 2px solid black;
+    background: red;
+}
+main{
+    min-height: 2500px;
+}
+.card{
+    background-color: #241E4E;
+    margin: 20px;
+}
+.titulo { 
+     /* Puedes cambiar el color de fondo de la barra de navegación según tus preferencias */
+    margin: 0px;
+    padding: 0px;
+     justify-content: center
+    color: #3366cc; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto */
+    background-color: #23282Fff;
+}
+.lista{
+    
+     list-style-type: none;
+    margin: 0px;
+    background-color: #23282Fff;
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+}
+
+.Caracteristicas{
+    
+    background-color: #23282Fff;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    margin: 0px;
+    padding: 10px 120px;
+    
+}
+.descripcion{
+    margin-top: 0px;
+   max-width: 600px; /* Ajusta este valor según tu diseño */
+margin-left: 20px; /* Espaciado entre la imagen y el texto */
+     /* Justifica el texto */
+}  
+.GamePlay{
+    margin: 10px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 30px;
+    z-index: 1;
+    text-align: left;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+
+     display: flex;
+    align-items: center;
+}
+
