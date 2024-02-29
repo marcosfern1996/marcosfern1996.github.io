@@ -107,9 +107,8 @@ main{
 .lista{
     
      list-style-type: none;
-    margin: 0px;
     background-color: #23282Fff;
-    padding: 0px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center; /* Alinea los elementos al centro horizontalmente */
 }
@@ -122,7 +121,7 @@ main{
     color: white;
     font-size: 18px;
     margin: 0px;
-    padding: 10px 120px;
+    padding: 0px 120px;
     
 }
 .descripcion{
@@ -139,16 +138,33 @@ margin-left: 20px; /* Espaciado entre la imagen y el texto */
     z-index: 1;
     text-align: left;
 }
-footer {
+
+footer{
+   
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #444;
     color: #fff;
-    padding: 10px;
-    text-align: center;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+
+    
 }
+footer ul.foot li {
+        margin-right: 40px; /* Adjust the margin between elements as needed */
+        list-style: none; /* Remove default list styling */
+    }
+    footer ul.foot {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px; /* Adjust the margin as needed */
+        margin-bottom: 0px;
+        
+    }
+
 .container {
 
      display: flex;
