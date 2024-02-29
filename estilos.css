@@ -48,8 +48,7 @@ aside .lista{
 display: inline-block;
     position: fixed;
     justify-content: left;
-
-background: #3F37C9;
+background: transparent;
 }
 aside .lista li {
     position: relative;
